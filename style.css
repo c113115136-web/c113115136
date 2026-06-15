@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background-color: #f0f2f5; 
+    color: #333;
+}
+
+
+.main-cover {
+    height: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1614583225154-5feade047397?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.cover-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.cover-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #636e72;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #ff4757;
+}
+
+.tab-btn.active {
+    color: #ff4757;
+    border-bottom: 4px solid #ff4757;
+}
+
+
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.tab-content {
+    display: none; 
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+.series-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2d3436;
+    position: relative;
+}
+
+
+.char-layout {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.char-layout:hover {
+    transform: translateY(-5px);
+}
+
+
+.char-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.char-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+.char-info {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.char-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #2d3436;
+}
+
+.char-info h2 span {
+    color: #ff4757;
+}
+
+.description {
+    line-height: 1.8;
+    color: #636e72;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 4px solid #ff4757;
+}
+
+.specs {
+    list-style: none;
+    padding: 0;
+}
+
+.specs li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.specs li strong {
+    color: #2d3436;
+    margin-right: 8px;
+}
